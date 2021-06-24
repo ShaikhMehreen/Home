@@ -41,13 +41,7 @@ mark {
 /*-------------Styling for title screen--------------*/
 
 /*Creating background for title page*/
-.header {
-	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/indexbackground.jpg");
-	background-position: center;
-	background-size: cover;
-	position: relative;
-}
+
 
 /*Displaying the navigation links*/ 
 nav {
