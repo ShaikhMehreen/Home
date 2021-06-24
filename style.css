@@ -3,6 +3,10 @@
   
 /*-----------The General styling-------------*/
   
+/*Introducing the font used throughout the website*/ 
+* {
+	font-family: 'Open Sans', sans-serif;
+}
 
 /*Settings for all h3 tags in the file*/
 h3 {
