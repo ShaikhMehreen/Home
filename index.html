@@ -1,0 +1,75 @@
+	<!--
+HTML for Mehreen's website
+This page will be the title page before all the content is shown
+June 19, 2021
+-->
+
+<!--Introducing the doctype-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Importing bootstrap-->
+		<!--Setting the charset to utf-8-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<!--Adding the title which is seen at the top of the tab-->
+		<title>Mehreen's Website</title>
+		<!--Linking the css file with this document-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--Importing OPen Sans font from 'Google Fonts'-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net//npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	</head>
+
+	<!--All the page's content is under the body-->
+	<body>
+		<!--The container-fluid tage allows the page's content to stay in screen-->
+		<div class="container-fluid">
+			<div class="header">
+				<!--Creating the navigation menu-->
+				<nav>
+					<!--All the options visible in the navigation menu-->
+					<div class="nav-links">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="anime.html">Anime</a></li>
+							<li><a href="books.html">Books</a></li>
+							<li><a href="art.html">Art</a></li>
+							<li><a href="music.html">Music</a></li>
+							<li><a href="references.html">References</a></li>
+						</ul>
+					</div>
+				</nav>
+			
+			<!--Creating the textbox where I introduce myself-->
+			<div class="text-box">
+				<h1>Hey There!</h1>
+				<p>My name is Mehreen Shaikh, and I'm a highschooler who goes to Victoria Park C.I. 
+					<br>Welcome to my webpage about me! 
+					<br>Click the button to learn more about my likes and interests!
+				</p>
+				<!--Creating a button that will take me to the home page-->
+				<a href="home.html" class="hero-btn">Let's Go!</a>
+			</div>
+			</div>
+			
+			<!--Adding html validator-->
+			<a href="https://validator.w3.org/nu/#file"> <img src="images/html-validator.png" width="88" height="31" alt="HTML Valid!"></a>
+			<!--Adding css validator copied from site-->
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="Valid CSS!">
+			</a>
+		<!--Closing container-fluid tag-->
+		</div>
+	</body>
+</html>
