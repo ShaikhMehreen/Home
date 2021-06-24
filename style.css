@@ -3,8 +3,386 @@
   
 /*-----------The General styling-------------*/
   
-/*Introducing the font used throughout the website*/ 
-* {
-	font-family: 'Open Sans', sans-serif;
+
+/*Settings for all h3 tags in the file*/
+h3 {
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+  
+/*Settings for all h1 tags in the file*/
+h1 {
+	font-size: 32px;
+	text-align: center;
 }
 
+/*Settings for all p tags in the file*/
+p {
+	color: black;
+	font-size: 18px;
+	padding: 10px;
+}
+
+/*set font size for all jumbotrons*/
+.animeheader h1{
+	font-size: 60px;
+}
+
+mark {
+	background-color: white;
+	color: black;
+}
+
+/*-------------Styling for title screen--------------*/
+
+/*Creating background for title page*/
+.header {
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/indexbackground.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+/*Displaying the navigation links*/ 
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Positoning the items in the navigation menu*/
+.nav-links {
+	flex:1;
+	text-align: right;
+}
+
+/*Displaying the menu options*/
+.nav-links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+/*Connecting the menu links*/
+.nav-links ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/*The animation taking place when user hovers over the links*/
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #ff4336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+	width: 100%;
+}
+
+/*Creating the button*/
+.text-box {
+	width: 90%;
+	color:white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center
+}
+
+/*Settings for h1 in text-box*/
+.text-box h1 {
+	font-size: 62px;
+}
+
+/*Settings for paragraph in text-box*/
+.text-box p {
+	margin:10px 0 40px;
+	font-size: 16px;
+	color: white;
+}
+
+/*Creating the skelaton of the button*/
+.hero-btn {
+	display: inline-block;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	text-decoration: none;
+}
+
+/*Action that takes place after button is hovered on*/
+.hero-btn:hover {
+	border: 1px solid white;
+	background: #f3ffa6;
+	transition: 1s;
+	text-decoration: none;
+}
+
+/*--------The css styling for the 'Home' page---------*/
+.jumbotron-home {
+	background-image: url(images/home-jumbotron.jpg);
+	background-size: cover;
+}
+
+.homepage {
+	background-color: #ffdca1;
+}
+
+/*--------The css styling for the 'Anime' page-------*/
+
+/*Uploading background image into jumbotron*/
+.jumbotron-anime {
+	background-image: url(images/anime-jumbotron.jpg);
+	background-size: cover;
+}
+
+/*Rendering page*/
+.anime {
+	width:80%;
+	margin: auto; 
+	text-align: center;
+	padding-top: 30px;
+}
+
+/*Setting the background for the anime page*/
+.animepage{
+	background-color: #d4f0bd;
+}
+
+/*Setting up the page and the display*/
+.row {
+	margin-top: 5%;
+	position: relative;
+	justify-content: space-between;
+}
+
+/*Setting up the page and the display*/
+.row2 {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*The border around the text and images for the odd number animes*/
+.anime-col{
+	background: #e7c9ff;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	float: left;
+	width: 100%;
+}
+
+/*The border around the text and images for the even number animes*/
+.anime-col2 {
+	background: #fff5d4;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	float: right;
+}
+
+/*What happens when you hover over the odd number animes*/
+.anime-col:hover {
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+	width: 100%;
+}
+
+/*What happens when you hover over the even number animes*/
+.anime-col2:hover {
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+}
+
+.anime-col img{
+	display: flex;
+	padding: 0px;
+}
+
+.iframe {
+	position: relative;
+	float: right;
+}
+
+
+/*--------The css styling for the 'Books' page-------*/
+
+/*Setting the background for the books jumbotron*/
+.jumbotron-books {
+	background-image: url(images/manga-jumbotron.jpg);
+	background-size: cover;
+}
+
+/*Setting the background for the book page*/
+.bookpage {
+	background-color: #e0dae0;
+}
+
+/*Positioning for my favourite books*/
+.favbook {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.favbook-col {
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+/*Positioning for my favourite books images*/
+.favbook-col img {
+	width: 100%;
+	border-radius: 10px;
+	position:relative;
+	display: flex;
+}
+
+/*The settings for the h3 under my favourite books*/
+.favbook-col h3 {
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+/*Positioning for everything in the manga section*/
+.manga {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.manga-col {
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*Positioning for the images in my favourite manga section*/
+.manga-col img {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+/*What is displayed before user hovers over the images*/
+.layer {
+	background: transparent;
+	height:100%;
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+/*What is displayed while user is hovering over the images*/
+.layer:hover {
+	background: rgba(226,0,0,0.7);
+}
+
+/*The text that appears hover*/
+.layer h3 {
+	width: 100%;
+	font-weight: 500;
+	color: white;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s
+}
+
+/*Redering the text when user hovers*/
+.layer:hover h3 {
+	bottom: 49%;
+	opacity: 1;
+}
+
+
+/*--------The css styling for the 'Music' page-------*/
+
+.jumbotron-music {
+	background-image: url(images/music-jumbotron.jpg);
+	background-size: cover;
+}
+
+.music{
+	padding: 30px;
+	position: relative;
+	background-color: #d2d1ff;
+	text-align: center;
+}
+
+
+/*--------The css styling for the 'Art' page-------*/
+
+/*Adding the background for the art jumbotron*/
+.jumbotron-art {
+	background-image: url(images/art-jumbotron.jpg);
+	background-size: cover;
+}
+
+/*Background color displayed throughout art screen*/
+.artpage {
+	background-color: #d4e8ff;
+}
+
+/*Styling used in table elements*/
+.art th, td {
+	text-align: center;
+	font-size: 28px;
+	width: 600px;
+}
+
+/*Fixing margin for all images under art*/
+.art img {
+	margin: 25px;
+}
+
+/*Positioning for the table*/
+table {
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*List alignment*/
+.favbook-col li {
+	text-align: left;
+}
+
+/*-----------------Styling for the References page--------------------*/
+
+.jumbotron-reference {
+	background-color: purple;
+}
+
+.referencepage {
+	text-align: left;
+}
