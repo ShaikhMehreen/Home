@@ -43,6 +43,7 @@ mark {
 /*Creating background for title page*/
 .header {
 	min-height: 100vh;
+	max-height: 7000vh;
 	width: 100%;
 	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/indexbackground.jpg");
 	background-position: center;
