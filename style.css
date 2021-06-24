@@ -8,33 +8,3 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-/*Settings for all h3 tags in the file*/
-h3 {
-	text-align: center;
-	font-weight: 600;
-	margin: 10px 0;
-}
-  
-/*Settings for all h1 tags in the file*/
-h1 {
-	font-size: 32px;
-	text-align: center;
-}
-
-/*Settings for all p tags in the file*/
-p {
-	color: black;
-	font-size: 18px;
-	padding: 10px;
-}
-
-/*set font size for all jumbotrons*/
-.animeheader h1{
-	font-size: 60px;
-}
-
-mark {
-	background-color: white;
-	color: black;
-}
-
